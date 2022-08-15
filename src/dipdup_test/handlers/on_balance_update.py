@@ -1,7 +1,7 @@
 from datetime import datetime
 from decimal import Decimal
 
-import demo_tzbtc.models as models
+import dipdup_test.models as models
 
 
 async def on_balance_update(

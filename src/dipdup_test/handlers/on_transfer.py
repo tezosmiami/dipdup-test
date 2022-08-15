@@ -1,8 +1,8 @@
 from decimal import Decimal
 
-from demo_tzbtc.handlers.on_balance_update import on_balance_update
-from demo_tzbtc.types.tzbtc.parameter.transfer import TransferParameter
-from demo_tzbtc.types.tzbtc.storage import TzbtcStorage
+from dipdup_test.handlers.on_balance_update import on_balance_update
+from dipdup_test.types.tzbtc.parameter.transfer import TransferParameter
+from dipdup_test.types.tzbtc.storage import TzbtcStorage
 from dipdup.context import HandlerContext
 from dipdup.models import Transaction
 
