@@ -1,0 +1,16 @@
+# Ignore all
+*
+
+# Add build files
+!Makefile
+!pyproject.toml
+!poetry.lock
+!README.md
+
+# Add code
+!src
+
+# Ignore caches
+**/.mypy_cache
+**/.pytest_cache
+**/__pycache__
