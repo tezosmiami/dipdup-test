@@ -2,8 +2,18 @@ spec_version: 1.2
 package: dipdup_test
 
 database:
-  kind: sqlite
-  path: dipdup-test.sqlite3
+  kind: postgres
+  host: db
+  port: 5432
+  user: ${POSTGRES_USER:-dipdup}
+  password: ${POSTGRES_PASSWORD:-changeme}
+  database: ${POSTGRES_DB:-dipdup}
+
+hasura:
+  url: http://hasura:8080
+  admin_secret: ${HASURA_SECRET:-changeme}
+  allow_aggregations: false
+  camel_case: true
 
 contracts:
   tzbtc_mainnet:
