@@ -7,7 +7,7 @@ database:
   database: ${POSTGRES_DB:-dipdup}
 
 hasura:
-  url: http://hasura:8080
+  url: 54.176.149.52
   admin_secret: ${HASURA_SECRET:-changeme}
   allow_aggregations: false
   camel_case: true

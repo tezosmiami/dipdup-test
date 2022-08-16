@@ -3,14 +3,14 @@ package: dipdup_test
 
 database:
   kind: postgres
-  host: db
+  host: ec2-34-227-135-211.compute-1.amazonaws.com
   port: 5432
   user: ${POSTGRES_USER:-dipdup}
   password: ${POSTGRES_PASSWORD:-changeme}
   database: ${POSTGRES_DB:-dipdup}
 
 hasura:
-  url: http://hasura:8080
+  url: http://54.176.149.52
   admin_secret: ${HASURA_SECRET:-changeme}
   allow_aggregations: false
   camel_case: true
