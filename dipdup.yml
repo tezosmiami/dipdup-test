@@ -1,6 +1,6 @@
 spec_version: 1.2
 package: dipdup_test
-
+logging: verbose
 database:
   kind: postgres
   host: ec2-34-227-135-211.compute-1.amazonaws.com
@@ -12,8 +12,9 @@ database:
 hasura:
   url: https://fair-monkfish-57.hasura.app
   admin_secret: ${HASURA_SECRET:-changeme}
-  allow_aggregations: false
-  camel_case: true
+  # allow_aggregations: false
+  # camel_case: true
+  create_source: true
 
 contracts:
   tzbtc_mainnet:
