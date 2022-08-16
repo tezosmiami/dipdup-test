@@ -7,7 +7,7 @@ database:
   database: ${POSTGRES_DB:-dipdup}
 
 hasura:
-  url: 54.176.149.52
+  url: https://fair-monkfish-57.hasura.app
   admin_secret: ${HASURA_SECRET:-changeme}
   allow_aggregations: false
   camel_case: true
